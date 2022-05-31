@@ -38,7 +38,7 @@ def main():
     weeklySalary = totalPapersPerWeek * newspaperCost * commissionRate
     totalPay = weeklySalary + numTipsPerWeek
 
-    #Display the results (total number of papers delivered for the week, the weekly salary, the tips for the week, and the total pay for the week)
+    #Display the results
     print("\nThe total number of papers you delivered for the week was " + str(totalPapersPerWeek) + " papers.")
     print("Using a predetermined newspaper cost of $1 and a commission rate of 25%, your weekly salary is $" + str(weeklySalary))
     print("The total amount you collected in tips was $" + str(numTipsPerWeek))
