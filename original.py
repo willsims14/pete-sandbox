@@ -28,21 +28,21 @@ def main():
     print("To get started we will first need some information from you:")
 
     #Prompt user for number of papers on route
-    numPapersOnRoute = int(input("\nHow many papers do you delivere on your route?\t"))
+    num_papers_on_route = int(input("\nHow many papers do you delivere on your route?\t"))
     #Prompt user for number of days paper is delivered per week
-    numDaysPerWeek = int(input("How many days a week do you deliver papers?\t"))
+    num_days_per_week = int(input("How many days a week do you deliver papers?\t"))
     #Prompt user for amount of tips received z week
-    numTipsPerWeek = int(input("How much did you receive in tips this week?\t"))
+    num_tips_per_week = int(input("How much did you receive in tips this week?\t"))
 
-    totalPapersPerWeek = numPapersOnRoute * numDaysPerWeek
-    weeklySalary = totalPapersPerWeek * NEWSPAPER_COST * COMMISSION_RATE
-    totalPay = weeklySalary + numTipsPerWeek
+    total_papers_per_week = num_papers_on_route * num_days_per_week
+    weekly_salary = total_papers_per_week * NEWSPAPER_COST * COMMISSION_RATE
+    total_pay = weekly_salary + num_tips_per_week
 
     #Display the results
-    print("\nThe total number of papers you delivered for the week was " + str(totalPapersPerWeek) + " papers.")
-    print("Using a predetermined newspaper cost of $1 and a commission rate of 25%, your weekly salary is $" + str(weeklySalary))
-    print("The total amount you collected in tips was $" + str(numTipsPerWeek))
-    print("Therefore making your total pay for the week $" + str(totalPay))
+    print("\nThe total number of papers you delivered for the week was " + str(total_papers_per_week) + " papers.")
+    print("Using a predetermined newspaper cost of $1 and a commission rate of 25%, your weekly salary is $" + str(weekly_salary))
+    print("The total amount you collected in tips was $" + str(num_tips_per_week))
+    print("Therefore making your total pay for the week $" + str(total_pay))
     print("\nThank you " + name + ", enjoy the rest of your day!")
 
 
