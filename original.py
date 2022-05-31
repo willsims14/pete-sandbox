@@ -23,11 +23,17 @@ def main():
     name = input("Hello, what is your name?\t")
 
     # Display welcome message
-    print(f"\nHello {name}, this program will assist you in calculating your weekly pay as a paper carrier.")
-    print("To get started we will first need some information from you:")
+    print(f"Hello {name}, this program will assist you in calculating your"
+           "weekly pay as a paper carrier.\nTo get started we will first need"
+           "some information from you:")
 
     # Prompt user for number of papers on route
-    num_papers_on_route = int(input("\nHow many papers do you delivere on your route?\t"))
+    try:
+        num_papers_on_route = int(input("\nHow many papers do you deliver on your route?\t"))
+    except ValueError as e:
+        print("\n     ! Please provide an integer !")
+        num_papers_on_route = int(input("\nHow many papers do you deliver on your route?\t"))
+
     # Prompt user for number of days paper is delivered per week
     num_days_per_week = int(input("How many days a week do you deliver papers?\t"))
     # Prompt user for amount of tips received z week
