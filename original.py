@@ -16,7 +16,6 @@
 def main():
     """ <String describing the main() function here> """
 
-    # Initialize Variables
     NEWSPAPER_COST = 1.00
     COMMISSION_RATE = 0.25
 
