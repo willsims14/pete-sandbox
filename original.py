@@ -17,30 +17,25 @@ def main():
     """ <String describing the main() function here> """
 
     #Initialize Variables (newpaperCost = $1, commissionRate = 25%)
-    newspaperCost = 1
+    newspaperCost = 1.00
     commissionRate = 0.25
 
-    #Display welcome message
+    # Prompt user for name
     name = input("Hello, what is your name?\t")
+
+    #Display welcome message
     print("\nHello " + name + ", this program will assist you in calculating your weekly pay as a paper carrier.")
     print("To get started we will first need some information from you:")
 
     #Prompt user for number of papers on route
     numPapersOnRoute = int(input("\nHow many papers do you delivere on your route?\t"))
-
     #Prompt user for number of days paper is delivered per week
     numDaysPerWeek = int(input("How many days a week do you deliver papers?\t"))
-
     #Prompt user for amount of tips received z week
     numTipsPerWeek = int(input("How much did you receive in tips this week?\t"))
 
-    #Calculate total number of papers per week (number of papers * number of days)
     totalPapersPerWeek = numPapersOnRoute * numDaysPerWeek
-
-    #Calculate weekly salary (total number of papers per week * cost of newspaper * commission rate)
     weeklySalary = totalPapersPerWeek * newspaperCost * commissionRate
-
-    #Calculate total pay (weekly salary + tips for the week)
     totalPay = weeklySalary + numTipsPerWeek
 
     #Display the results (total number of papers delivered for the week, the weekly salary, the tips for the week, and the total pay for the week)
