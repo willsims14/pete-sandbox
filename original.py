@@ -45,5 +45,6 @@ def main():
     print("Therefore making your total pay for the week $" + str(totalPay))
     print("\nThank you " + name + ", enjoy the rest of your day!")
 
-#----------Execute-------------------
-main()
+
+if __name__ == "__main__":
+    main()
