@@ -23,7 +23,7 @@ def main():
     name = input("Hello, what is your name?\t")
 
     # Display welcome message
-    print("\nHello " + name + ", this program will assist you in calculating your weekly pay as a paper carrier.")
+    print(f"\nHello {name}, this program will assist you in calculating your weekly pay as a paper carrier.")
     print("To get started we will first need some information from you:")
 
     # Prompt user for number of papers on route
@@ -38,11 +38,11 @@ def main():
     total_pay = weekly_salary + num_tips_per_week
 
     # Display the results
-    print("\nThe total number of papers you delivered for the week was " + str(total_papers_per_week) + " papers.")
-    print("Using a predetermined newspaper cost of $1 and a commission rate of 25%, your weekly salary is $" + str(weekly_salary))
-    print("The total amount you collected in tips was $" + str(num_tips_per_week))
-    print("Therefore making your total pay for the week $" + str(total_pay))
-    print("\nThank you " + name + ", enjoy the rest of your day!")
+    print(f"\nThe total number of papers you delivered for the week was {str(total_papers_per_week)} papers.")
+    print(f"Using a predetermined newspaper cost of $1 and a commission rate of 25%, your weekly salary is ${str(weekly_salary)}")
+    print(f"The total amount you collected in tips was ${str(num_tips_per_week)}")
+    print(f"Therefore making your total pay for the week ${str(total_pay)}")
+    print(f"\nThank you {name}, enjoy the rest of your day!")
 
 
 if __name__ == "__main__":
