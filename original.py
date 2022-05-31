@@ -17,8 +17,8 @@ def main():
     """ <String describing the main() function here> """
 
     #Initialize Variables (newpaperCost = $1, commissionRate = 25%)
-    newspaperCost = 1.00
-    commissionRate = 0.25
+    NEWSPAPER_COST = 1.00
+    COMMISSION_RATE = 0.25
 
     # Prompt user for name
     name = input("Hello, what is your name?\t")
@@ -35,7 +35,7 @@ def main():
     numTipsPerWeek = int(input("How much did you receive in tips this week?\t"))
 
     totalPapersPerWeek = numPapersOnRoute * numDaysPerWeek
-    weeklySalary = totalPapersPerWeek * newspaperCost * commissionRate
+    weeklySalary = totalPapersPerWeek * NEWSPAPER_COST * COMMISSION_RATE
     totalPay = weeklySalary + numTipsPerWeek
 
     #Display the results
